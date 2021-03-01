@@ -264,6 +264,7 @@ namespace Registro_Detalle
             // 
             this.IdNumericUpDown.Location = new System.Drawing.Point(84, 55);
             this.IdNumericUpDown.Name = "IdNumericUpDown";
+            this.IdNumericUpDown.ReadOnly = true;
             this.IdNumericUpDown.Size = new System.Drawing.Size(68, 23);
             this.IdNumericUpDown.TabIndex = 42;
             // 

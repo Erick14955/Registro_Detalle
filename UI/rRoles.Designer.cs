@@ -32,7 +32,7 @@ namespace Registro_Detalle
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rRoles));
             this.RolIdlabel = new System.Windows.Forms.Label();
-            this.Descripcionlabel = new System.Windows.Forms.Label();
+            this.Nombrelabel = new System.Windows.Forms.Label();
             this.IDnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.DescripciontextBox = new System.Windows.Forms.TextBox();
@@ -64,21 +64,22 @@ namespace Registro_Detalle
             this.RolIdlabel.TabIndex = 0;
             this.RolIdlabel.Text = "Rol Id";
             // 
-            // Descripcionlabel
+            // Nombrelabel
             // 
-            this.Descripcionlabel.AutoSize = true;
-            this.Descripcionlabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Descripcionlabel.Location = new System.Drawing.Point(12, 66);
-            this.Descripcionlabel.Name = "Descripcionlabel";
-            this.Descripcionlabel.Size = new System.Drawing.Size(81, 19);
-            this.Descripcionlabel.TabIndex = 1;
-            this.Descripcionlabel.Text = "Descripcion";
+            this.Nombrelabel.AutoSize = true;
+            this.Nombrelabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Nombrelabel.Location = new System.Drawing.Point(12, 66);
+            this.Nombrelabel.Name = "Nombrelabel";
+            this.Nombrelabel.Size = new System.Drawing.Size(60, 19);
+            this.Nombrelabel.TabIndex = 1;
+            this.Nombrelabel.Text = "Nombre";
             // 
             // IDnumericUpDown
             // 
             this.IDnumericUpDown.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IDnumericUpDown.Location = new System.Drawing.Point(91, 25);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
+            this.IDnumericUpDown.ReadOnly = true;
             this.IDnumericUpDown.Size = new System.Drawing.Size(70, 22);
             this.IDnumericUpDown.TabIndex = 2;
             // 
@@ -243,7 +244,7 @@ namespace Registro_Detalle
             this.Controls.Add(this.DescripciontextBox);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.IDnumericUpDown);
-            this.Controls.Add(this.Descripcionlabel);
+            this.Controls.Add(this.Nombrelabel);
             this.Controls.Add(this.RolIdlabel);
             this.Name = "rRoles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -262,7 +263,7 @@ namespace Registro_Detalle
         #endregion
 
         private System.Windows.Forms.Label RolIdlabel;
-        private System.Windows.Forms.Label Descripcionlabel;
+        private System.Windows.Forms.Label Nombrelabel;
         private System.Windows.Forms.NumericUpDown IDnumericUpDown;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.TextBox DescripciontextBox;
