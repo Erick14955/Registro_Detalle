@@ -52,12 +52,5 @@ namespace Registro_Detalle
                 MessageBox.Show("El permiso no ha sido encontrada o no esta registrada");
             }
         }
-
-        private bool ExisteEnLaBaseDeDatos()
-        {
-            Permisos permiso = PermisosBLL.Buscar((int)IDnumericUpDown.Value);
-
-            return (permiso != null);
-        }
     }
 }

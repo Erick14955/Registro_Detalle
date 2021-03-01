@@ -120,13 +120,6 @@ namespace Registro_Detalle
             return paso;
         }
 
-        private bool ExisteEnLaBaseDeDatos()
-        {
-            Roles rol = RolesBLL.Buscar((int)IDnumericUpDown.Value);
-
-            return (rol != null);
-        }
-
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
             Roles rol;

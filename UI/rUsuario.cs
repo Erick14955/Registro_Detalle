@@ -189,10 +189,5 @@ namespace Registro_Detalle
             else
                 Errores.SetError(IdNumericUpDown, "ID no existente");
         }
-
-        private void Registrousuario_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

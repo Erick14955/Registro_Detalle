@@ -299,7 +299,6 @@ namespace Registro_Detalle
             this.Name = "rUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Usuarios";
-            this.Load += new System.EventHandler(this.Registrousuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Errores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
             this.ResumeLayout(false);
