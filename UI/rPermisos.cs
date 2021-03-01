@@ -22,12 +22,13 @@ namespace Registro_Detalle
         private void Limpiar()
         {
             IDnumericUpDown.Value = 0;
-            DescripciontextBox.Clear();
+            NombretextBox.Clear();
         }
 
         private void LlenarCampos(Permisos permiso)
         {
             IDnumericUpDown.Value = permiso.PermisosId;
+            NombretextBox.Text = permiso.Nombre;
             DescripciontextBox.Text = permiso.DescripcionPermisos;
         }
 

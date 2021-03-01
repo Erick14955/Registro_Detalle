@@ -35,8 +35,10 @@ namespace Registro_Detalle
             this.Nombrelabel = new System.Windows.Forms.Label();
             this.IDnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Buscarbutton = new System.Windows.Forms.Button();
-            this.DescripciontextBox = new System.Windows.Forms.TextBox();
+            this.NombretextBox = new System.Windows.Forms.TextBox();
             this.ErroreserrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Descripcionlabel = new System.Windows.Forms.Label();
+            this.DescripciontextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErroreserrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -57,15 +59,16 @@ namespace Registro_Detalle
             this.Nombrelabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Nombrelabel.Location = new System.Drawing.Point(12, 66);
             this.Nombrelabel.Name = "Nombrelabel";
-            this.Nombrelabel.Size = new System.Drawing.Size(81, 19);
+            this.Nombrelabel.Size = new System.Drawing.Size(60, 19);
             this.Nombrelabel.TabIndex = 1;
-            this.Nombrelabel.Text = "Descripcion";
+            this.Nombrelabel.Text = "Nombre";
             // 
             // IDnumericUpDown
             // 
             this.IDnumericUpDown.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.IDnumericUpDown.Location = new System.Drawing.Point(99, 25);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
+            this.IDnumericUpDown.ReadOnly = true;
             this.IDnumericUpDown.Size = new System.Drawing.Size(70, 22);
             this.IDnumericUpDown.TabIndex = 2;
             // 
@@ -81,18 +84,36 @@ namespace Registro_Detalle
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
-            // DescripciontextBox
+            // NombretextBox
             // 
-            this.DescripciontextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DescripciontextBox.Location = new System.Drawing.Point(99, 63);
-            this.DescripciontextBox.Name = "DescripciontextBox";
-            this.DescripciontextBox.ReadOnly = true;
-            this.DescripciontextBox.Size = new System.Drawing.Size(203, 22);
-            this.DescripciontextBox.TabIndex = 4;
+            this.NombretextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NombretextBox.Location = new System.Drawing.Point(99, 63);
+            this.NombretextBox.Name = "NombretextBox";
+            this.NombretextBox.ReadOnly = true;
+            this.NombretextBox.Size = new System.Drawing.Size(203, 22);
+            this.NombretextBox.TabIndex = 4;
             // 
             // ErroreserrorProvider
             // 
             this.ErroreserrorProvider.ContainerControl = this;
+            // 
+            // Descripcionlabel
+            // 
+            this.Descripcionlabel.AutoSize = true;
+            this.Descripcionlabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Descripcionlabel.Location = new System.Drawing.Point(12, 102);
+            this.Descripcionlabel.Name = "Descripcionlabel";
+            this.Descripcionlabel.Size = new System.Drawing.Size(81, 19);
+            this.Descripcionlabel.TabIndex = 5;
+            this.Descripcionlabel.Text = "Descripcion";
+            // 
+            // DescripciontextBox
+            // 
+            this.DescripciontextBox.Location = new System.Drawing.Point(99, 102);
+            this.DescripciontextBox.Name = "DescripciontextBox";
+            this.DescripciontextBox.ReadOnly = true;
+            this.DescripciontextBox.Size = new System.Drawing.Size(299, 23);
+            this.DescripciontextBox.TabIndex = 6;
             // 
             // rPermisos
             // 
@@ -100,8 +121,10 @@ namespace Registro_Detalle
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(333, 112);
+            this.ClientSize = new System.Drawing.Size(410, 192);
             this.Controls.Add(this.DescripciontextBox);
+            this.Controls.Add(this.Descripcionlabel);
+            this.Controls.Add(this.NombretextBox);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.IDnumericUpDown);
             this.Controls.Add(this.Nombrelabel);
@@ -122,8 +145,10 @@ namespace Registro_Detalle
         private System.Windows.Forms.Label Nombrelabel;
         private System.Windows.Forms.NumericUpDown IDnumericUpDown;
         private System.Windows.Forms.Button Buscarbutton;
-        private System.Windows.Forms.TextBox DescripciontextBox;
+        private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.ErrorProvider ErroreserrorProvider;
+        private System.Windows.Forms.TextBox DescripciontextBox;
+        private System.Windows.Forms.Label Descripcionlabel;
     }
 }
 
