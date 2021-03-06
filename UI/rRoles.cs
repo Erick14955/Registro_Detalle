@@ -175,7 +175,7 @@ namespace Registro_Detalle
             CargarGrid();
             PermisoscomboBox.Focus();
             PermisoscomboBox.Text = "";
-            AsignadocheckBox.Checked = false;
+            AsignadocheckBox.Checked = true;
         }
 
         private void EliminarPermisobutton_Click(object sender, EventArgs e)
