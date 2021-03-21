@@ -40,6 +40,27 @@ namespace Registro_Detalle.BLL
             return paso;
         }
 
+        public static bool ExisteUsuario(string email, string clave)
+        {
+            bool encontrado = false;
+            var contexto = new Contexto();
+
+            try
+            {
+                encontrado = contexto.Usuarios.Any(e => e.Email == email && e.Clave == clave);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return encontrado;
+        }
+
         public static bool Modificar(Usuarios usuario)
         {
             bool paso = false;

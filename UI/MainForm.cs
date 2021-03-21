@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Registro_Detalle.UI.Consultas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,7 @@ namespace Registro_Detalle
             this.UsuariosToolStripMenuItem.Click += new EventHandler(this.UsuariosToolStripMenuItem_ItemClicked);
             this.RolesToolStripMenuItem.Click += new EventHandler(this.RolesToolStripMenuItem_ItemClicked);
             this.PermisosToolStripMenuItem.Click += new EventHandler(this.PermisosToolStripMenuItem_ItemClicked);
+            this.ConsultasToolStripMenuItem.Click += new EventHandler(this.ConsultasToolStripMenuItem_ItemClicked);
         }
 
         private void UsuariosToolStripMenuItem_ItemClicked(object sender, EventArgs e)
@@ -38,6 +40,12 @@ namespace Registro_Detalle
         {
             rPermisos permisos = new rPermisos();
             permisos.Visible = true;
+        }
+
+        private void ConsultasToolStripMenuItem_ItemClicked(object sender, EventArgs e)
+        {
+            cRoles rls = new cRoles();
+            rls.Show();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
